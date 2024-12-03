@@ -1,1 +1,21 @@
-DemoPipeLineSCMGit
+pipeline {
+    agent any
+
+    stages {
+        stage('Dev') {
+            steps {
+                echo 'Dev Print'
+            }
+        }
+    stage('Stage') {
+            steps {
+                echo 'Stage Print'
+            }
+        }
+            stage('Deply') {
+            steps {
+                echo 'Deply Print'
+            }
+        }
+    }    
+}
